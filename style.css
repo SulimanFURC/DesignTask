@@ -1,0 +1,382 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /* background-image: url('./assets/lines.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* header section css starts here */
+header {
+  box-shadow: 0 -5px 13px 0px black;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.webMenu {
+  align-items: center;
+}
+
+.searchBtn button {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+/* header section css ends here */
+
+/* hero banner section css starts here */
+.bannerBG {
+  background-image: url('./assets/Hero_bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.bannerOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.bannerHeading {
+  color: white;
+  font-size: 75px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.bannerLogo {
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+/* hero banner section css ends here */
+
+/* provider section css starts here */
+.providerSection {
+  margin-top: 100px;
+  padding: 0 150px;
+}
+/* provider section css ends here */
+
+
+/* life line section  */
+
+.life_card_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.life_card_wrapper .life_card {
+  box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 1px 6px rgba(0,0,0,0.23);
+  padding: 15px;
+  border-radius: 18px;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.life_card.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.life_card h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #33b0e6;
+}
+
+#lifeCard_1{
+  position: relative;
+  left: 51px;
+  visibility: hidden;
+}
+#lifeCard_2{
+  position: relative;
+  left: 32px;
+  top: 20px;
+  visibility: hidden;
+}
+#lifeCard_3{
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+  visibility: hidden;
+}
+#lifeCard_4{
+  position: relative;
+  top: 35px;
+  right: 20px;
+  visibility: hidden;
+}
+#lifeCard_5{
+  position: relative;
+  bottom: 85px;
+  right: 0px;
+  visibility: hidden;
+}
+
+.circles{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.circles .circle {
+  height: 39px;
+  width: 39px;
+  border: 1px solid #33b0e6;
+  border-radius: 100%;
+  transition: .4s all;
+}
+#circle_1{
+  bottom: 80px;
+  left: 73px;
+  opacity: 1;
+}
+#circle_2{
+  bottom: 77px;
+  left: 39px;
+}
+#circle_3{
+  bottom: 98px;
+  left: 1px;
+}
+#circle_4{
+  bottom: 45px;
+  right: 39px;
+}
+#circle_5{
+  bottom: 167px;
+  right: 74px;
+}
+
+/* life line section ends here */
+
+/* true noth lab css starts here */
+.trueNorthSection img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.d-md-flex {
+  display: flex;
+}
+.w-md-50 {
+  width: 50%;
+  padding-left: 30px;
+}
+/* true noth lab css ends here */
+
+/* product css starts here */
+.productSection {
+  background-color: var(--secondary-color);
+}
+.productTop {
+  align-items: baseline;
+}
+.prodHeading {
+  font-size: 90px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0;
+  line-height: 68px;
+  margin-bottom: 20px;
+}
+.productContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product img {
+  width: 80px;
+}
+.product p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+/* product css ends here */
+
+/* news css starts here */
+.news,
+.footerCol {
+  width: 22%;
+  margin-right: 30px;
+}
+.newsCard {
+  border: 1px solid gainsboro;
+  margin-bottom: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.newsCard:hover {
+  box-shadow: 0 0 13px 2px gainsboro;
+}
+.newsCard img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+}
+.newsCard .card-body {
+  padding: 15px 20px 30px 20px;
+}
+.newsCard .card-body h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+}
+/* news css ends here */
+
+/* footer css starts here */
+footer {
+  background-color: #676767;
+  padding: 60px 0;
+  background-image: url('./assets/footer_wavy.png');
+}
+footer .footerCol p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+.lastParagraph {
+  text-align: end;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.footerIcon {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-right: 5px;
+  transition: .4s all;
+  cursor: pointer;
+}
+.fb:hover {
+  background-color: #4267B2 ;
+}
+.insta:hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.footerIcon:hover i {
+ color: white;
+}
+/* footer css ends here */
+
+/* media qurries section start here */
+@media screen and (max-width: 1199.98px) {
+}
+
+@media screen and (max-width: 1023.98px) {
+}
+
+@media screen and (max-width: 991.98px) {
+  .menuMobileBtn {
+    display: block;
+  }
+  .webMenu {
+    display: none;
+  }
+  .product {
+    width: 33.33%;
+  }
+  .news {
+    width: 27%;
+  }
+  .footerCol {
+    width: 33.33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menuMobileBtn {
+    display: none;
+  }
+  .webMenu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .d-md-flex {
+    display: block;
+  }
+  .w-md-50 {
+    width: 100%;
+    padding: 0;
+  }
+  .prodHeading {
+    font-size: 50px;
+    line-height: 38px;
+  }
+  .bannerHeading {
+    font-size: 50px;
+  }
+  .providerSection {
+    padding: 0 20px !important;
+  }
+  .bannerBG {
+    height: 500px;
+  }
+  .trueNorthSection img {
+    height: 350px;
+  }
+  .product {
+    width: 50%;
+  }
+  .news {
+    width: 44%;
+  }
+  .footerCol {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .prodHeading {
+    font-size: 40px;
+    line-height: 28px;
+  }
+  .product {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+    margin: 0;
+  }
+  .footerCol {
+    width: 100%;
+  }
+}

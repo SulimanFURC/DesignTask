@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #34b1e1;
+  --primary-color-hover: #028cc1;
+  --secondary-color: #ececeb;
+}
+/* Common CSS classes */
+.main-heading {
+  font-size: 60px !important;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+.mainParagraph {
+  color: gray;
+  line-height: 25px;
+}
+.sub-heading {
+  font-size: 17px !important;
+  color: var(--primary-color);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  border: 0;
+  font-size: 15px;
+  padding: 11px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .4s all;
+}
+.primary-btn:hover{
+  background-color: var(--primary-color-hover);
+}
+.secondary-btn {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 15px;
+  background-color: transparent;
+  border: 0;
+}
+.text-center {
+  text-align: center;
+}
+.position-relative{
+  position: relative;
+}
+.position-absolute{
+  position: absolute;
+}
+.text-end {
+  text-align: end;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.w-100 {
+  width: 100%;
+}
+.w-auto {
+  width: auto;
+}
+.pb-60 {
+  padding-bottom: 60px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.container {
+  /* width: 100%; */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 767.98px) {
+  .main-heading {
+    font-size: 40px !important;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
